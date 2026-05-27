@@ -822,56 +822,35 @@
       </div>
 
       <!--
-        SLIDER DE FOTOS
-        Para adicionar suas fotos:
-        1. Coloque os arquivos (foto1.jpg, foto2.jpg, foto3.jpg) na mesma pasta do index.html
-        2. Substitua cada <div class="about-photo-placeholder"> por:
-           <img src="foto1.jpg" alt="João Neto" class="about-photo" />
-        O slider troca automaticamente a cada 3 segundos.
-      -->
-      <div class="about-photo-wrap fade-in">
-        <div class="about-slider" id="aboutSlider">
-
-          <div class="about-slide active">
-            <img src="perfil.jpg" alt="Perfil" class="about-photo" />
-          </div>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <span>foto 1</span>
-            </div>
-          </div>
-
-          <div class="about-slide">
-            <img src="boticario.jpg" alt="grupo" class="about-photo" />
-          </div>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <span>foto 2</span>
-            </div>
-          </div>
-
-          <div class="about-slide">
-            <div class="about-photo-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-              <span>foto 3</span>
-            </div>
-          </div>
-
-        </div>
-        <div class="slider-dots" id="sliderDots">
-          <div class="slider-dot active" onclick="goToSlide(0)"></div>
-          <div class="slider-dot" onclick="goToSlide(1)"></div>
-          <div class="slider-dot" onclick="goToSlide(2)"></div>
-        </div>
+  SLIDER DE FOTOS
+  Para adicionar mais fotos, substitua os placeholders por:
+  <img src="suafoto.jpg" alt="João Neto" class="about-photo" />
+-->
+<div class="about-photo-wrap fade-in">
+  <div class="about-slider" id="aboutSlider">
+    <div class="about-slide active">
+      <img src="perfil.jpg" alt="Perfil" class="about-photo" />
+    </div>
+    <div class="about-slide">
+      <img src="boticario.jpg" alt="grupo" class="about-photo" />
+    </div>
+    <div class="about-slide">
+      <div class="about-photo-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>foto 3</span>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="slider-dots" id="sliderDots">
+    <div class="slider-dot active" onclick="goToSlide(0)"></div>
+    <div class="slider-dot" onclick="goToSlide(1)"></div>
+    <div class="slider-dot" onclick="goToSlide(2)"></div>
+  </div>
+</div>
+</section>
 
     <!-- SKILLS -->
     <section id="skills">
